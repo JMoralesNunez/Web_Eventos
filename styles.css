@@ -69,7 +69,7 @@
 
 .Testimonios{
     padding-top: 100vh;
-    background-color: #724d08;
+    background-color: #f0b74e;
     padding-bottom: 20vh;
 }
 
@@ -77,16 +77,17 @@
     text-align: center;
     margin-bottom: 50px;
     font-size: 2em;
-    color: rgb(255, 255, 245);
+    color: rgb(36, 36, 0);
 }
 
+/*
 .carrusel{
     display: flex;
     border: 1px solid;
     min-width: 50vw;
     max-width: 70vw;
     margin-inline: auto;
-    overflow: auto;
+    overflow-x: auto;
     gap: 10px;
 }
 
@@ -94,6 +95,27 @@
     min-width: 100%;
     margin-left: 0;
     padding: 5rem;
+    border-right: 1px solid rgb(0, 0, 10);
+}
+*/
+.carrusel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    gap: 10px;
+    max-width: 80vw;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+.carrusel__item {
+    min-width: 100%;
+    scroll-snap-align: start;
+    padding: 5rem;
+    border-right: 1px solid rgb(0, 0, 10);
+    background-color: #fff5e1;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .registro{
