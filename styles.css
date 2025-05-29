@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+	top: 0;
+	animation: main linear forwards;
+	animation-timeline: scroll();
+	animation-range: 0vh 60vh;
+    width: 100%;
+}
+
+.hero__title{
+    color: rgb(255, 255, 245);
+    animation: glow 1s linear infinite alternate;
+}
+
+@keyframes glow {
+    to{
+        text-shadow: 0px 0px 10px;
+    }
+}
+
+.hero__button{
+    text-decoration: none;
+    text-align: center;
+    line-height: 5rem;
+    color: #f88400;
+    background-color: black;
+    height: 5rem;
+    width: 12rem;
+    border-radius: 50px;
+    font-size: 2rem;
+    box-shadow: 1px 1px 5px #f88400;
+}
+
+.hero__button:hover{
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(to top right, #ebdc10, #f88400  );
+    transform: scale(0.9);
+    transition: all 250ms ease-in-out ;
+}
+
+@keyframes main {
+	from {
+		background-position: 50% 0;
+		height: 100vh;
+        font-size: 4vw;
+	}
+	to {
+		background-position: 50% 100%;
+		height: 10vh;
+        flex-direction: row;
+        font-size: 2em;
+	}
+}
+
+.Testimonios{
+    padding-top: 100vh;
+    background-color: #724d08;
+    padding-bottom: 20vh;
+}
+
+.Testimonios__title{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2em;
+    color: rgb(255, 255, 245);
+}
+
+.carrusel{
+    display: flex;
+    border: 1px solid;
+    min-width: 50vw;
+    max-width: 70vw;
+    margin-inline: auto;
+    overflow: auto;
+    gap: 10px;
+}
+
+.carrusel__item{
+    min-width: 100%;
+    margin-left: 0;
+    padding: 5rem;
+}
+
+.registro{
+    height: 300vh;
+}
+
+
+
+
+
+
+
+
+
+/* .container{
+    width: 25px;
+    height: 25px;
+    background-color: yellowgreen;
+    border-radius: 50%;
+    position: relative;
+    margin-inline: auto;
+    margin-top: 50vh;
+}
+
+.container::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: pulser 1.5s linear infinite;
+    background-color: yellowgreen;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+@keyframes pulser {
+    to{
+        transform: scale(1.5);
+        opacity: 0.1;
+    }
+} */
