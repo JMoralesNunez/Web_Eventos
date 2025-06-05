@@ -80,24 +80,6 @@
     color: rgb(36, 36, 0);
 }
 
-/*
-.carrusel{
-    display: flex;
-    border: 1px solid;
-    min-width: 50vw;
-    max-width: 70vw;
-    margin-inline: auto;
-    overflow-x: auto;
-    gap: 10px;
-}
-
-.carrusel__item{
-    min-width: 100%;
-    margin-left: 0;
-    padding: 5rem;
-    border-right: 1px solid rgb(0, 0, 10);
-}
-*/
 .carrusel {
     display: flex;
     overflow-x: auto;
@@ -118,10 +100,94 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.registro{
-    height: 300vh;
+.registro {
+    max-width: 500px;
+    margin: 5rem auto;
+    padding: 2rem;
+    background-color: #fff5e1;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
+.registro__titulo {
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.registro label {
+    font-weight: bold;
+    color: #444;
+}
+
+.registro input {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.registro button {
+    padding: 1rem;
+    background-color: #f88400;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.registro button:hover {
+    background-image: linear-gradient(to top right, #ebdc10, #f88400);
+    transform: scale(0.97);
+    -webkit-transform: scale(0.97);
+    -moz-transform: scale(0.97);
+    -ms-transform: scale(0.97);
+    -o-transform: scale(0.97);
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 5rem;
+}
+
+.footer__social {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer__social a {
+    color: #f88400;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer__social a:hover {
+    color: #ebdc10;
+}
+
+@media (max-width: 500px) {
+    .hero__title{
+        font-size: 1.5rem;
+    }
+    .hero__button{
+        font-size: 1rem;
+        height: 2.5rem;
+        width: 4.5;
+        line-height: 2.5rem;
+    }
+}
 
 
 
